@@ -1,10 +1,11 @@
 
 var express = require('express');
 var app = express();
-var server = app.listen(3000, listening);
+var PORT = 3000;
+var server = app.listen(PORT, listening);
 
 function listening(){
-  console.log("listening. . .");
+  console.log('listening at ${PORT}');
 }
 
 app.use(express.static('aframe'));
